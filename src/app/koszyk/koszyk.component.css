@@ -1,0 +1,13 @@
+/* cart.component.css */
+.cart-container {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+  }
+  
+  h3 {
+    margin-top: 0;
+    color: #333;
+  }

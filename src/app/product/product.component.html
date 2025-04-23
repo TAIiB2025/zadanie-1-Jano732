@@ -1,0 +1,20 @@
+<table [ngClass]="{'promotion': product.czyPromocja}">
+  <thead>
+    <tr>
+      <th>Nazwa</th>
+      <th>Cena</th>
+      <th>Data utworzenia</th>
+      <th>Dodaj do koszyka</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>{{ product.nazwa }}</td>
+      <td>{{ product.cena | currency:'PLN':'symbol-narrow':'1.2-2' }}</td>
+      <td>{{ product.dataUtworzenia | date:'dd.MM.yyyy\'r\'' }}</td>
+      <td>
+        <button (click)="addToCart()">Dodaj do koszyka</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
